@@ -1,1 +1,0 @@
-print("leon scott kennedy is my boyfriend")
