@@ -31,7 +31,7 @@ def initialize_database(master_password):
         conn.commit()
         return conn
     except Exception as e:
-        print(f"❌ Database Error: {e}")
+        print(f"Database Error: {e}")
         return None
 
 def save_entry(conn, service, user, pwd, cat):
@@ -43,9 +43,9 @@ def save_entry(conn, service, user, pwd, cat):
             VALUES (?, ?, ?, ?)
         ''', (service, user, pwd, cat))
         conn.commit()
-        print(f"✅ Securely saved {service} to the vault.")
+        print(f"Securely saved {service} to the vault.")
     except Exception as e:
-        print(f"❌ Failed to save: {e}")
+        print(f"Failed to save: {e}")
 
 
 
